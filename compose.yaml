@@ -1,0 +1,8 @@
+services:
+  server:
+    restart: always
+    image: manictime/manictimeserver:latest
+    volumes:
+      - /var/lib/manictimeserver/Data:/app/Data
+    ports:
+      - "8080:8080"
